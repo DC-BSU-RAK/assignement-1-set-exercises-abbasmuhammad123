@@ -1,0 +1,134 @@
+/* Base styles for the entire page */
+/* Sets the default font to 'Courier New' for a retro aesthetic, removes margins and padding, 
+   applies a dark background, light text color for contrast, and improves readability with line-height */
+body {
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0a;
+    color: #eaeaea;
+    line-height: 1.6;
+}
+
+/* Container to center content and set max width */
+/* Ensures the content stays centered with a max width of 900px and adds some padding for spacing */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header section with logo and navigation */
+/* Creates a sticky header with a black background, red border for emphasis, and keeps it on top of other elements */
+header {
+    background-color: #000;
+    padding: 20px 0;
+    border-bottom: 3px solid #e50914;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Class for the show title styling */
+/* Makes the show title bold, large, uppercase, with a red Netflix-style color and a letter-spacing for emphasis */
+.show-title {
+    font-size: 2.5rem;
+    color: #e50914;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Navigation styles */
+/* this code Centers navigation links, allows wrapping for small screens, and provides spacing */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #e50914;
+}
+
+/* Section styling */
+/* this code Adds padding and a subtle border between sections for better readability */
+section {
+    padding: 40px 0;
+    border-bottom: 1px solid #333;
+}
+
+h2 {
+    color: #e50914;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border-left: 4px solid #e50914;
+    padding-left: 10px;
+}
+
+/* Class for character cards */
+.character-card {
+    background-color: #111;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(229, 9, 20, 0.2);
+}
+
+.character-card h3 {
+    color: #e50914;
+    margin-top: 0;
+}
+
+/* Style for the official site button */
+/* this code Creates a red button with padding, rounded corners, bold text, and smooth hover effects */
+.official-button {
+    display: inline-block;
+    background-color: #e50914;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/*this code  Enhances button interaction by changing the background and adding a slight upward movement on hover */
+.official-button:hover {
+    background-color: #f40612;
+    transform: translateY(-2px);
+}
+
+/* this is footer. this code Centers the footer text and makes it smaller and subtle to avoid distraction */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Responsive design */
+/* this code Reduces the show title and adjusts navigation links for better usability on smaller devices */
+@media (max-width: 600px) {
+    .show-title {
+        font-size: 1.8rem;
+    }
+    
+    nav a {
+        margin: 5px 10px;
+        font-size: 1rem;
+    }
+}
+/* External CSS styles end here */
