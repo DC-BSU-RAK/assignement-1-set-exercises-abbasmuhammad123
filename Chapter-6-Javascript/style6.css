@@ -1,0 +1,98 @@
+/* Reset default browser styling for consistent appearance */
+* {
+    margin: 0;              /* Remove all default margins */
+    padding: 0;             /* Remove all default padding */
+    box-sizing: border-box; /* Include padding/border in element width/height */
+}
+/* Style the body with a gradient background */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif; /* Use a modern, clean font stack this is used for font text style */
+    background: linear-gradient(135deg, #74ebd5, #acb6e5); /* Create a diagonal gradient from turquoise to soft blue */
+    display: flex;          /* Use flexbox for centering */
+    justify-content: center;/* Center horizontally */
+    align-items: center;    /* Center vertically */
+    min-height: 100vh;      /* Ensure body takes full viewport height */
+}
+/* Style the calculator container with a futuristic card effect */
+.calculator-container {
+    background: rgba(255, 255, 255, 0.95); /* Semi-transparent white for a glassy look */
+    padding: 2.5rem;        /* Generous padding for spacious feel */
+    border-radius: 15px;    /* Rounded corners for softness */
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37); /* Deep, colorful shadow for depth */
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Subtle border for glass effect */
+    width: 100%;            /* Full width up to max */
+    max-width: 450px;       /* Cap the width for readability */
+    backdrop-filter: blur(4px); /* Add a slight blur effect behind the container */
+}
+/* Style the heading with a modern touch */
+h1 {
+    text-align: center;     /* Center the title */
+    color: #2c3e50;         /* Deep blue-gray color */
+    margin-bottom: 2rem;    /* Space below title */
+    font-size: 2rem;        /* Larger size for prominence */
+    text-transform: uppercase; /* All caps for emphasis */
+    letter-spacing: 2px;    /* Space out letters for style */
+}
+/* Group input fields and labels */
+.input-group {
+    margin-bottom: 1.5rem;  /* Space between input groups */
+    position: relative;     /* For potential future pseudo-elements */
+}
+/* Style the labels with a subtle animation potential */
+.input-group label {
+    display: block;         /* Stack label above input */
+    margin-bottom: 0.6rem;  /* Space between label and input */
+    color: #34495e;         /* Muted blue-gray color */
+    font-weight: 500;       /* Slightly bold for emphasis */
+    transition: color 0.3s ease; /* Smooth color transition on interaction */
+}
+/* Creative input field styling with neon-like effects */
+.input-group input {
+    width: 100%;            /* Full width of container */
+    padding: 0.7rem;        /* Comfortable padding */
+    border: 2px solid #3498db; /* Bright blue border */
+    border-radius: 8px;     /* Slightly rounded corners */
+    font-size: 1.1rem;      /* Readable text size */
+    background: rgba(255, 255, 255, 0.7); /* Slightly transparent background */
+    transition: all 0.3s ease; /* Smooth transitions for all changes */
+    box-shadow: 0 2px 10px rgba(52, 152, 219, 0.2); /* Soft blue glow */
+}
+.input-group input:focus {
+    outline: none;          /* Remove default focus outline */
+    border-color: #e74c3c;  /* Change to vibrant red on focus */
+    box-shadow: 0 0 15px rgba(231, 76, 60, 0.5); /* Stronger red glow on focus */
+    background: white;      /* Solid white background when focused */
+    transform: scale(1.02); /* Slight scale up for emphasis */
+}
+/* Stylish button with a futuristic vibe */
+button {
+    width: 100%;            /* Full width of container */
+    padding: 0.9rem;        /* Tall padding for clickability */
+    background: linear-gradient(45deg, #3498db, #2980b9); /* Gradient from light to dark blue */
+    color: #ffffff;         /* White text */
+    border: none;           /* No border for clean look */
+    border-radius: 25px;    /* Pill-shaped button */
+    font-size: 1.1rem;      /* Readable text */
+    font-weight: 600;       /* Bold text */
+    cursor: pointer;        /* Hand cursor on hover */
+    transition: all 0.4s ease; /* Smooth transition for all changes */
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.4); /* Blue shadow for depth */
+}
+/* Enhanced hover effect for button */
+button:hover {
+    background: linear-gradient(45deg, #e74c3c, #c0392b); /* Change to red gradient on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 6px 20px rgba(231, 76, 60, 0.5); /* Stronger red shadow */
+}
+/* Style the result display with a premium feel */
+#result {
+    margin-top: 2rem;       /* Space above result */
+    text-align: center;     /* Center the text */
+    color: #27ae60;         /* Vibrant green for positive feedback */
+    font-weight: 600;       /* Bold text */
+    font-size: 1.2rem;      /* Larger text for emphasis */
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 0.5rem;        /* Padding for comfort */
+    border-radius: 5px;     /* Slight rounding */
+    box-shadow: 0 2px 10px rgba(39, 174, 96, 0.2); /* Subtle green shadow */
+}
