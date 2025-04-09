@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif; /* this code Sets the default font to Arial or a sans-serif fallback for the entire page */
+    margin: 0; /* this code Removes default browser margins around the body */
+    padding: 0; /* this Removes default browser padding around the body */
+}
+
+.header {
+    background-color: #1c0a38; /* this code Sets a dark purple background color for the header */
+    color: white; /* this Makes all text in the header white */
+    text-align: center; /* this code Centers all content within the header */
+    padding: 20px 0; /* this Adds 20px padding on top and bottom, no padding on left or right */
+}
+
+.header h1 {
+    font-size: 3rem; /* this code Sets a large font size (48px) for the h1 in the header */
+    margin: 0; /* this Removes default margin around the h1 */
+    text-decoration: underline; /* by the help of this code this Underlines the h1 text */
+}
+
+.nav {
+    background-color: #1c0a38; /*thiscode  Matches the header’s dark purple background */
+    display: flex; /* this code Uses flexbox for layout */
+    justify-content: center; /* this code Centers the navigation links horizontally */
+    padding-bottom: 20px; /* this code Adds 20px padding only at the bottom */
+}
+
+.nav a {
+    color: white; /*this code  Makes navigation links white */
+    text-decoration: none; /* this Removes the default underline from links */
+    font-size: 1.5rem; /*this code  Sets link font size to 24px */
+    margin: 0 15px; /* this Adds 15px horizontal spacing between links */
+}
+
+.content {
+    display: flex; /*this code Uses flexbox to layout main content and sidebar side by side */
+    max-width: 1200px; /* this code Limits the content width to 1200px */
+    margin: 0 auto; /* this code Centers the content block horizontally on the page */
+}
+
+.main {
+    flex: 2; /* this code Gives the main content area twice the width of the sidebar */
+    padding: 20px; /* this Adds 20px padding on all sides of the main content */
+}
+
+.sidebar {
+    flex: 1; /* this Gives the sidebar half the width of the main content */
+    background-color: #1e3a73; /*this code Sets a dark blue background for the sidebar */
+    color: white; /* Makes all text in the sidebar white */
+    padding: 20px; /* Adds 20px padding on all sides of the sidebar */
+}
+
+h2 {
+    text-decoration: underline; /* Underlines all h2 headings */
+    font-size: 2rem; /* Sets h2 font size to 32px */
+    margin-top: 0; /* Removes default top margin from h2 elements */
+}
+
+.main p {
+    font-size: 1.2rem; /* this code  Sets paragraph font size to 19.2px in the main section */
+    line-height: 1.6; /* Increases line spacing for better readability */
+}
+
+.main img {
+    width: 100%; /* this Makes images in the main section span the full width of their container */
+    height: auto; /* this code Maintains image aspect ratio */
+    display: block; /* this code Ensures images behave as block elements, avoiding inline spacing issues */
+}
+
+.sidebar-images {
+    display: flex; /*this  Uses flexbox to arrange sidebar images horizontally */
+    gap: 10px; /* this line of code Adds 10px spacing between images */
+    margin-top: 20px; /* this Adds 20px space above the image container */
+}
+
+.sidebar-images img {
+    width: 48%; /* this codeets each sidebar image to take up 48% of the container width */
+    height: auto; /*this Maintains image aspect ratio */
+}
+
+.sidebar ul {
+    list-style-type: none; /* this code Removes default bullet points from the sidebar list */
+    padding: 0; /* this Removes default padding from the list */
+    font-size: 1.2rem; /* this code Sets list item font size to 19.2px */
+    line-height: 2; /* this code Increases line spacing between list items */
+}
+
+.footer {
+    background-color: #8a2be2; /* this line of code Sets a vibrant purple background for the footer */
+    color: white; /* this Makes footer text white */
+    text-align: center; /* this code Centers the footer content */
+    padding: 15px 0; /* this code Adds 15px padding on top and bottom */
+}
