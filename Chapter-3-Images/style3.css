@@ -1,0 +1,48 @@
+/* Styles for all div elements */
+div {
+    display: inline-block;          /* this code Makes divs display in a row */
+    font-family: sans-serif;        /*this code  Sets font to any sans-serif typeface */
+    font-size: 20px;               /* this code Sets text size to 20 pixels */
+    margin: 25px;                  /* Adds 25px margin around each div */
+    border: 4px solid black;       /* Creates a 4px wide black border */
+    line-height: 100px;            /* Centers text vertically in div */
+    text-align: center;            
+    width: 200px;                  
+    height: 200px;               
+}
+
+/* Styles for the body element */
+body {
+    margin: 100px auto;            /* Adds 100px top/bottom margin, centers horizontally */
+    width: max-content;            /* Makes body width fit its content */
+    background-color: white;        /* Sets background to white */
+}
+
+/* Styles for div with id="div1" */
+#div1 {
+    border-color: yellowgreen;      /* Changes border color to yellowgreen */
+    box-shadow: 10px 10px 20px blue; /* Adds blue shadow offset 10px right/down with 20px blur */
+}
+
+/* Styles for div with id="div2" */
+#div2 {
+    border-color: rgb(198, 21, 133); /* Sets border color to pinkish-purple */
+    box-shadow: inset 6px 6px 6px black; /* Adds internal black shadow offset 6px right/down */
+}
+
+/* Styles for div with id="div3" */
+#div3 {
+    border-color: white;            /* Sets border color to white */
+    border-radius: 20px;           /* Rounds corners with 20px radius */
+    box-shadow: 
+        0 0 0 4px rgb(214, 157, 11),  /* First border layer: orange outline */
+        0 0 0 8px rgb(183, 186, 77),  /* Second border layer: yellowish-green outline */
+        0 0 0 12px rgb(59, 175, 72),  /* Third border layer: green outline */
+        0 0 0 20px rgb(7, 196, 206);  /* Fourth border layer: cyan outline */
+}
+
+/* Styles for div with id="div4" */
+#div4 {
+    border-color: yellow;           /*this code  Sets border color to yellow */
+    text-shadow: 6px 6px 1.5px black; /* this code Adds black shadow to text, offset 6px right/down */
+}
