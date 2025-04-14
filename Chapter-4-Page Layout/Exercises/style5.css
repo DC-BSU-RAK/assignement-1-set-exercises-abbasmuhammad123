@@ -1,0 +1,105 @@
+/* this Resets default browser styles for consistent layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* this code Styles body with font and background */
+body {
+    font: 1.6em Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+/* this code Styles header with dark background and centered text */
+header {
+    background: #088ce9;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* this code Styles navigation bar */
+nav {
+    background: #dfdf0b;
+    padding: 0.5rem;
+}
+
+/* this code Styles nav list as centered flexbox */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+/* this code Adds spacing to nav list items */
+nav li {
+    margin: 0 1rem;
+}
+
+/* this code Styles nav links */
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* this code Changes nav link color on hover */
+nav a:hover {
+    color: #ecf0f1;
+}
+
+/* this code Styles main content as centered flex container */
+main {
+    display: flex;
+    max-width: 1200px;
+    margin: 2rem auto;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+/* this code Styles task-list and notes sections */
+.task-list, .notes {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex: 1;
+}
+
+/*this code Styles headings in sections */
+.task-list h2, .notes h2 {
+    margin-bottom: 1rem;
+    color: #11da5e;
+}
+
+/* this code help to Style task list with bullets */
+.task-list ul {
+    list-style: circle;
+    margin: 0 0 1rem 1.5rem;
+}
+
+/* this code Adds spacing to task list items */
+.task-list li {
+    margin: 0.5rem 0;
+}
+
+/* this code Styles button */
+button {
+    background: #3498db;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* this code Styles footer as fixed bottom bar */
+footer {
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
