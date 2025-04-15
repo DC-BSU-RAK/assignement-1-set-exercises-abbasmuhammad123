@@ -1,0 +1,120 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Game container */
+.game {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Game title */
+h1 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* RGB display */
+h2 {
+    font-size: 1.3rem;
+    color: #555;
+    margin: 8px 0;
+}
+
+/* Lives and score */
+p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 4px 0;
+}
+
+/* Color choices container */
+.colors {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 12px 0;
+}
+
+/* Color box */
+.color-box {
+    width: 70px;
+    height: 70px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid #ddd;
+}
+
+/* Color box hover */
+.color-box:hover {
+    border-color: #007bff;
+}
+
+/* Feedback message */
+#message {
+    font-size: 0.9rem;
+    margin-top: 8px;
+}
+
+/* Hidden class */
+.hidden {
+    display: none;
+}
+
+/* Game over screen */
+#game-over {
+    margin-top: 15px;
+}
+
+/* Final score */
+#final-score {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 8px 0;
+}
+
+/* Replay button */
+#replay {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+/* Replay button hover */
+#replay:hover {
+    background: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 400px) {
+    .game {
+        padding: 12px;
+    }
+    .color-box {
+        width: 50px;
+        height: 50px;
+    }
+}
