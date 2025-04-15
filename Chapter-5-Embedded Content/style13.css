@@ -1,0 +1,50 @@
+body, html { 
+    margin: 0; /* remove default margin*/
+    padding: 0;
+    height: 100%; /* sets the height of the page*/
+    display: flex;
+    justify-content: center; /* center horizontally*/ 
+    align-items: center;
+    background-color: #f0f0f0;
+    /* Sets up full-screen centered layout with light gray background */
+}
+
+.container {
+    position: relative;
+    width: 80%; 
+    max-width: 800px;
+    /* Creates responsive container with maximum width constraint */
+}
+
+video { /* style of the video*/
+    max-width: 100%;  /* ensures video is not larger than the container */
+    max-height: 100%; /* ensures video is not larger than the container */
+    display: block;
+    margin: auto; /* centers the video*/ 
+    /* Ensures video scales responsively and centers within container */
+}
+
+h1 {
+    font-size: 36px;
+    color: transparent;
+    background-image: linear-gradient(45deg, #0ddc47, #eb16b6, #dbbf0c); /* creates the gradient background */
+    -webkit-background-clip: text; /* this code is for safari*/
+    background-clip: text;
+    animation: moveFlag 2s infinite linear; /* this code adds animation to the text */
+    /* Styles heading with gradient text and animation */
+}
+
+@keyframes moveFlag { /* defines the animation */
+    0% {
+        transform: translateY(0px);
+        /* Starting position of animation */
+    }
+    50% {
+        transform: translateY(-10px);
+        /* Midpoint of animation with upward movement */
+    }
+    100% {
+        transform: translateY(0px);
+        /* Returns to starting position to complete animation cycle */
+    }
+}
