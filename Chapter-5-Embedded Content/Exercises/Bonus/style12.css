@@ -1,0 +1,92 @@
+/* Global styles for the body */
+body {
+  font-family: 'Arial', sans-serif; /*this code Sets default font */
+  background-color: #f0f2f5; /* Light gray background */
+  margin: 0; /* this code Removes default margin */
+  padding: 20px; /*this code Adds padding around content */
+  display: flex; /* this code Uses flexbox for layout */
+  flex-direction: column; /* this code Arranges children vertically */
+  min-height: 100vh; /* this code Ensures minimum height of viewport */
+}
+
+/* Styles for the main heading */
+h1 {
+  text-align: center; /*this code  Centers the text */
+  color: #1a3c6e; /* Dark blue color */
+  text-transform: uppercase; /* this code Convert text to uppercase */
+  letter-spacing: 2px; /* this code Adds spacing between letters */
+  margin-bottom: 30px; /* Space below the heading */
+  font-size: 2.5em; /* Larger font size */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Subtle text shadow */
+}
+
+/* Container for grid layout */
+.grid-container {
+  display: grid; /* Use CSS grid */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive columns */
+  gap: 15px; /* this code gives Space between grid items */
+  max-width: 1200px; /* Maximum width of the container */
+  margin: 0 auto; /* this code Centers the container */
+  padding: 20px; /* Padding inside the container */
+}
+
+/* Styles for individual grid items */
+.sample {
+  background-color: #ffffff; /* White background */
+  border-radius: 12px; /* Rounded corners */
+  padding: 20px; /* Internal padding */
+  text-align: center; /* Center text */
+  font-size: 1.1em; /* Slightly larger font */
+  color: #333; /* Dark gray text */
+  cursor: pointer; /* Hand cursor on hover */
+  transition: all 0.3s ease; /* Smooth transitions for all properties */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow */
+  border: 2px solid #4a90e2; /* Blue border */
+}
+
+/* Hover effects for grid items */
+.sample:hover {
+  transform: translateY(-3px); /* Slight lift effect */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* Enhanced shadow */
+  background-color: #4a90e2; /* Blue background */
+  color: white; /* White text */
+}
+
+/* Active state for grid items */
+.sample:active {
+  transform: translateY(0); /* Return to original position */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Reduced shadow */
+}
+
+/* Footer styles */
+footer {
+  margin-top: auto; /* Push footer to bottom */
+  text-align: center; /* Center text */
+  padding: 20px; /* Internal padding */
+  background-color: #1a3c6e; /* Dark blue background */
+  color: white; /* White text */
+  width: 100%; /* Full width */
+}
+
+/* Footer paragraph styles */
+footer p {
+  margin: 0; /*this code Removes default margin */
+  font-size: 0.9em; /* Smaller font size */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 600px) {
+  .grid-container {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Smaller columns */
+      gap: 10px; /* Reduced gap */
+  }
+
+  h1 {
+      font-size: 1.8em; /* Smaller heading */
+  }
+
+  .sample {
+      font-size: 0.9em; /* Smaller text */
+      padding: 15px; /* Reduced padding */
+  }
+}

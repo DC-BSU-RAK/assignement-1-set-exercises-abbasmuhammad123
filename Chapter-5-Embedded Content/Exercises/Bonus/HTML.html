@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- this code Sets character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- this code Ensures responsive viewport settings -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- this is the Page title -->
+    <title>Alan Partridge Audio Board</title>
+    <!-- this code Links to external CSS stylesheet -->
+    <link rel="stylesheet" href="style12.css">
+</head>
+<body>
+    <!-- this is Main heading for the audio board -->
+    <h1>Alan Partridge Audio Clips</h1>
+
+    <!-- this is Grid container for audio sample buttons -->
+    <div class="grid-container">
+        <!-- Each div represents a clickable audio sample -->
+        <div class="sample" data-audio="Audio Sampler/Audio/ah-ha.mp3">Ah-Ha!</div>
+        <div class="sample" data-audio="Audio Sampler/Audio/back-of-the-net.mp3">Back of the Net!</div>
+        <div class="sample" data-audio="Audio Sampler/Audio/bangoutoforder.mp3">Totally Out of Line</div>
+        <div class="sample" data-audio="Audio Sampler/Audio/dan.mp3">Dan!</div>
+        <div class="sample" data-audio="Audio Sampler/Audio/emailoftheevening.mp3">Top Email Tonight</div>
+        <div class="sample" data-audio="Audio Sampler/Audio/hellopartridge.mp3">Greetings, Partridge</div>
+        <div class="sample" data-audio="Audio Sampler/Audio/iateascotchegg.mp3">Scotch Egg Eaten</div>
+        <div class="sample" data-audio="Audio Sampler/Audio/imconfused.mp3">Bit Puzzled</div>
+    </div> 
+    <!--this is  Audio element for playing sound clips -->
+    <audio id="audioPlayer" preload="auto"></audio>
+    
+    <!-- this code connects External JavaScript file for audio functionality -->
+    <script src="index1.js"></script>
+    <!-- this is Inline JavaScript for text-to-speech functionality -->
+    <script>
+        // this code Function to convert input text to speech
+        function speakText() {
+            // Get the text input value
+            let input = document.getElementById("speech-input").value;
+            // Create a new speech synthesis utterance
+            let utterance = new SpeechSynthesisUtterance();
+            // Set language to Uk English
+            utterance.lang = "en-UK";
+            // Set the text to be spoken
+            utterance.text = input;
+            // Configure speech properties
+            utterance.volume = 1; // Full volume
+            utterance.rate = 1;   // Normal speed
+            utterance.pitch = 1;  // Normal pitch
+            // Trigger the speech synthesis
+            window.speechSynthesis.speak(utterance);
+        }
+    </script> <!-- end of inline javascript-->
+
+    <!-- this code is Input field for text-to-speech -->
+    <div>
+        <input type="text" id="speech-input" placeholder="Type text for speech" />
+    </div>
+    <!-- this is Button to trigger text-to-speech -->
+    <div>
+        <button type="button" onclick="speakText()">Play Voice</button>
+    </div>
+    <!-- Hint for users on how to use the text-to-speech feature -->
+    <div>
+        <small><span style="color: aliceblue;"><b>HINT:</b> Enter text and hit "Play Voice"</span></small>
+    </div>
+      <!-- this is Footer with copyright information -->
+      <footer>
+        <p>© Alan Partridge Audio Board</p>
+    </footer>
+</body>
+</html><!-- end of html document-->
